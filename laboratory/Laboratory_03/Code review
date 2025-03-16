@@ -1,0 +1,12 @@
+Code review
+
+Stage I
+- rename functions and variables to more significant names
+- replace magic numbers with static variables
+
+Stage II
+- refactor the solution by managing the product type using enums
+
+Stage III
+- refactor by simplifying the function, splitting it into multiple simpler ones
+- apply SRP from SOLID
