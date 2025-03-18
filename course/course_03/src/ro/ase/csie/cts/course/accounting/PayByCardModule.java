@@ -4,7 +4,7 @@ public class PayByCardModule implements IAccounting{
 
 	@Override
 	public void payTuition(double amount) {
-		System.out.println("Pay by card");
+		System.out.println("Pay by card " + amount);
 	}
 
 }

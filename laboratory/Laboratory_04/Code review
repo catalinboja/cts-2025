@@ -1,0 +1,23 @@
+Code review
+
+Stage I
+- rename functions and variables to more significant names
+- replace magic numbers with static variables
+
+Stage II
+- refactor the solution by managing the product type using enums
+
+Stage III
+- refactor by simplifying the function, splitting it into multiple simpler ones
+- apply SRP from SOLID
+
+Stage IV
+- getFinalProductPriceWithDiscount is still doing more than 1 thing 
+(extra account discount should be moved to another method)
+- manage the NEW product type discount as the other types
+- rename the methods - they sound similar
+
+
+Stage V (SOLID)
+- getAccountDiscount depends on Marketing strategy. 
+We should outsource it (DIP & DI)
