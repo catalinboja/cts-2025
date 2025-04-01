@@ -20,6 +20,7 @@ public class TestBuilder {
 				.addMemoryCard(new SDCard(100))
 				.build();
 		//you can't set the attributes later
+
 		
 	
 		
