@@ -22,7 +22,7 @@ You are a developer for ACME Inc, which produces commercial drones. You are work
 
 Hints
 
-1.      Given classes are available on GitHub at https://github.com/catalinboja/cts-2023/tree/main/Laboratory/Assignment_02
+1.      Given classes are available on GitHub at https://github.com/catalinboja/cts-2025/tree/main/laboratory/Assignment_02
 
 2.      You can implement Lazy or Eager solutions. You can choose between them or implement both versions in 2 different solutions
 
