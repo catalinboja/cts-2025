@@ -3,7 +3,7 @@ package ro.ase.acs.cts.documents;
 public class DocumentOpenOfficeText extends AbstractDocument{
 
 	
-	public DocumentOpenOfficeText(String name, int version) {
+	public DocumentOpenOfficeText(String name) {
 		this.setName(name);
 	}
 	

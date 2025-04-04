@@ -3,12 +3,16 @@ package ro.ase.acs.cts.documents;
 public class DocumentWordText extends AbstractDocument {
 	
 	private int version;
+	private boolean macrosEnabled;
 
-	public DocumentWordText(String title, int version, 
-			boolean hasMetaData, int compatibilityVersion, 
-			boolean isProtected, int initialSize) {
+	public DocumentWordText(
+			String title, 
+			int version
+			,boolean enableMacros
+			) {
 		this.setName(title);
 		this.version = version;
+		this.macrosEnabled = enableMacros;
 	}
 	
 	@Override

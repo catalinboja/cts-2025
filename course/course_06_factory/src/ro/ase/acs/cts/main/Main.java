@@ -12,13 +12,13 @@ public class Main {
 	public static void main(String[] args) {
 		
 		//tight coupling;
-		
 //		AbstractDocument htmlDoc = 
 //				new DocumentHtmlGeneric("index.html", true);
 //		AbstractDocument msWordDoc = 
-//				new DocumentWordText("course.docx", 12, true, 10, false);
+//				new DocumentWordText("course.docx", 12);
 //		AbstractDocument openOfficeDoc = 
-//				new DocumentOpenOfficeText("assignment.odl", 6);
+//				new DocumentOpenOfficeText("assignment.odl");
+//		
 		
 		//test the factory method solution
 		

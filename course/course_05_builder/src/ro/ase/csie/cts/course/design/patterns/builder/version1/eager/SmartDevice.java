@@ -110,10 +110,24 @@ public class SmartDevice {
 		
 		private SmartDevice smartdevice = null;
 		
+		public SmartDeviceBuilder() {
+			this.smartdevice = new SmartDevice();
+		}
+		
 		public SmartDeviceBuilder(String model, String manufacturer) {
 			this.smartdevice = new SmartDevice();
 			this.smartdevice.setModel(model);
 			this.smartdevice.setManufacturer(manufacturer);
+		}
+		
+		public SmartDeviceBuilder addModel(String model) {
+			this.smartdevice.model = model;
+			return this;
+		}
+		
+		public SmartDeviceBuilder addManufacturer(String producer) {
+			this.smartdevice.manufacturer = producer;
+			return this;
 		}
 		
 		public SmartDeviceBuilder addWiFi() {

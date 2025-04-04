@@ -13,7 +13,7 @@ public class MsDocFactory extends AbstractDocFactory{
 	public AbstractDocument getDocument(DocType docType, String docName) {
 		switch(docType) {
 		case WORD:
-			return new DocumentOpenOfficeText(docName, DEFAULT_WORD_VERSION);
+			return new DocumentOpenOfficeText(docName);
 		default:
 			throw new UnsupportedOperationException();
 		}

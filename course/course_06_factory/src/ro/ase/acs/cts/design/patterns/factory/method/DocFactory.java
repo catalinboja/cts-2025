@@ -16,13 +16,13 @@ public class DocFactory extends AbstractDocFactory{
 		switch(docType) {
 		case WORD:
 			return new DocumentWordText(
-					docName, DEFAULT_WORD_VERSION, true, 2, true, 0);
+					docName, DEFAULT_WORD_VERSION, false);
 			
 		case HTML:
 			return new DocumentHtmlGeneric(docName, false);
 			
 		case OPEN_OFFICE:
-			return new DocumentOpenOfficeText(docName, DEFAULT_OPEN_VERSION);
+			return new DocumentOpenOfficeText(docName);
 		default:
 			throw new UnsupportedOperationException();
 		}

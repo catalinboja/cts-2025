@@ -18,6 +18,8 @@ public class SmartDeviceDirector {
 
 	public SmartDevice buildSamsungS22() {
 		return builder.addWiFi()
+				.addModel("S22")
+				.addManufacturer("Samsung")
 				.addMemoryCard(new SDCard(32))
 				.addSIM(new TelCoSIMCard())
 				.build();
@@ -25,6 +27,8 @@ public class SmartDeviceDirector {
 	
 	public SmartDevice buildAppleX22() {
 		return builder
+				.addModel("X22")
+				.addManufacturer("Apple")
 				.addDisplay(new DisplaySuperAmoled(10))
 				.addWiFi()
 				.addSIM(new TelCoSIMCard())

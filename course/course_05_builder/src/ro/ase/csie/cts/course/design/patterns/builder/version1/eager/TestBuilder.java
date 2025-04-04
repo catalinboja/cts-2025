@@ -26,8 +26,8 @@ public class TestBuilder {
 		
 		SmartDeviceBuilder smartDeviceBuilder = 
 				new SmartDeviceBuilder("S22", "Samsung");
-		SmartDevice smartDevice = 
-				smartDeviceBuilder.addWiFi()
+		SmartDevice smartDevice = smartDeviceBuilder
+				.addWiFi()
 				.addMemoryCard(new SDCard(32))
 				.addSIM(new TelCoSIMCard())
 				.build();
@@ -40,9 +40,10 @@ public class TestBuilder {
 				.build();
 		
 		SmartDeviceDirector devicesDirectory = 
-				new SmartDeviceDirector(
-						new SmartDeviceBuilder("S22", "Samsung"));
+				new SmartDeviceDirector(new SmartDeviceBuilder());
+		
 		SmartDevice phone = devicesDirectory.buildSamsungS22();
+		SmartDevice phone2 = devicesDirectory.buildAppleX22();
 		
 		
 		//TO DO: init other attributes
