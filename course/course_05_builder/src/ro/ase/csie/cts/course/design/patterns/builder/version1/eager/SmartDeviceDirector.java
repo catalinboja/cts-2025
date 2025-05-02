@@ -8,16 +8,22 @@ import ro.ase.csie.cts.course.design.patterns.builder.version1.eager.SmartDevice
 
 public class SmartDeviceDirector {
 
-	SmartDeviceBuilder builder;
+	//SmartDeviceBuilder builder;
 	
 	
-	public SmartDeviceDirector(SmartDeviceBuilder builder) {
+//	public SmartDeviceDirector(SmartDeviceBuilder builder) {
+//		super();
+//		this.builder = builder;
+//	}
+	
+	public SmartDeviceDirector() {
 		super();
-		this.builder = builder;
+		//this.builder = builder;
 	}
 
+
 	public SmartDevice buildSamsungS22() {
-		return builder.addWiFi()
+		return new SmartDevice.SmartDeviceBuilder().addWiFi()
 				.addModel("S22")
 				.addManufacturer("Samsung")
 				.addMemoryCard(new SDCard(32))
@@ -26,7 +32,7 @@ public class SmartDeviceDirector {
 	}
 	
 	public SmartDevice buildAppleX22() {
-		return builder
+		return new SmartDevice.SmartDeviceBuilder()
 				.addModel("X22")
 				.addManufacturer("Apple")
 				.addDisplay(new DisplaySuperAmoled(10))

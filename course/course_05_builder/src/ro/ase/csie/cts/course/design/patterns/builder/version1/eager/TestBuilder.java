@@ -38,9 +38,13 @@ public class TestBuilder {
 				.addWiFi()
 				.addSIM(new TelCoSIMCard())
 				.build();
+//		
+//		SmartDeviceDirector devicesDirectory = 
+//				new SmartDeviceDirector(new SmartDeviceBuilder());
+//		
 		
 		SmartDeviceDirector devicesDirectory = 
-				new SmartDeviceDirector(new SmartDeviceBuilder());
+				new SmartDeviceDirector();
 		
 		SmartDevice phone = devicesDirectory.buildSamsungS22();
 		SmartDevice phone2 = devicesDirectory.buildAppleX22();
