@@ -7,6 +7,7 @@ import ro.ase.acs.cts.initial.login.LoginInterface;
 public class SecureLoginProxy implements LoginInterface{
 
 	LoginInterface initialLoginModule = null;
+	
 	HashMap<String, Integer> attemptsCounter = new HashMap<>();
 	public static final int MAX_ATTEMPTS = 3;
 	

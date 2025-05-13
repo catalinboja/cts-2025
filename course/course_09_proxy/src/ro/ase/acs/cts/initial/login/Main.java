@@ -5,7 +5,8 @@ public class Main {
 	public static void main(String[] args) {
 		
 		//brute force attack on user account
-		String passwordsDictionary[] = new String[]{"123456","1234","player1",
+		String passwordsDictionary[] = 
+				new String[]{"123456","1234","player1",
 				"root","player11234","1234player","1234"}; 
 		
 		LoginInterface login = new LoginModule();
