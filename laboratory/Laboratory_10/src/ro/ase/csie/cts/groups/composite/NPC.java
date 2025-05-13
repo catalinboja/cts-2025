@@ -15,8 +15,7 @@ public class NPC extends AbstractGroupNode{
 
 	@Override
 	public void move(int distance) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("NPC moves " + distance);
 	}
 
 	@Override

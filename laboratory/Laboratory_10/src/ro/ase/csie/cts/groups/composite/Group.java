@@ -10,20 +10,24 @@ public class Group extends AbstractGroupNode{
 
 	@Override
 	public void move(int distance) {
-		// TODO Auto-generated method stub
-		
+		//move the entire group
+		for(AbstractGroupNode node : nodes) {
+			node.move(distance);
+		}
 	}
 
 	@Override
 	public void defend(int points) {
-		// TODO Auto-generated method stub
-		
+		//do nothing
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public void attack(int points) {
-		// TODO Auto-generated method stub
-		
+		// the entire group attacks
+		for(AbstractGroupNode node : nodes) {
+			node.attack(points);
+		}
 	}
 
 	@Override
@@ -34,26 +38,24 @@ public class Group extends AbstractGroupNode{
 
 	@Override
 	public void addNode(AbstractGroupNode node) {
-		// TODO Auto-generated method stub
-		
+		this.nodes.add(node);
 	}
 
 	@Override
 	public AbstractGroupNode getNode(int index) {
-		// TODO Auto-generated method stub
-		return null;
+		if(index > this.nodes.size() - 1)
+			return null;
+		return this.nodes.get(index);
 	}
 
 	@Override
 	public void removeNode(AbstractGroupNode node) {
-		// TODO Auto-generated method stub
-		
+		this.nodes.remove(node);
 	}
 
 	@Override
 	public int getGroupSize() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.nodes.size();
 	}
 
 	@Override
