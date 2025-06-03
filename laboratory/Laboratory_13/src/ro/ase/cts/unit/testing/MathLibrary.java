@@ -5,7 +5,7 @@ import ro.ase.cts.unit.testing.exceptions.NullValuesException;
 
 public class MathLibrary {
 	
-	public static int minimumValue(int[] values) throws NoValuesException{
+	public static int minimumValue(int[] values) {
 		
 		if(values == null)
 			throw new NullValuesException();
